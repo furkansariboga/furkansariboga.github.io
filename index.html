@@ -1,199 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Asil's Personal Website - Mechanical Engineering Student, Software Projects and Engineering Tools">
+    <meta name="description"
+        content="Asil's Personal Website - Mechanical Engineering Student, Software Projects and Engineering Tools">
     <title>Welcome to Asil's Homepage!</title>
     <style>
         body {
-            background-color: #000080;
-            color: #00FF00;
+            background-color: #282a36;
+            color: #50fa7b;
             font-family: "Courier New", Courier, monospace;
             margin: 0;
             padding: 0;
         }
+
         a {
-            color: #FFFF00;
+            color: #bd93f9;
         }
+
         a:visited {
-            color: #FF8800;
+            color: #ffb86c;
         }
+
         a:hover {
-            color: #FF0000;
+            color: #ff79c6;
         }
+
         hr {
             border: none;
-            border-top: 2px dashed #00FF00;
+            border-top: 2px dashed #50fa7b;
             margin: 15px 0;
         }
+
         .center {
             text-align: center;
         }
+
         .marquee-text {
-            color: #FF00FF;
+            color: #ff79c6;
             font-size: 14px;
             font-weight: bold;
         }
+
         table.main {
             width: 700px;
             margin: 0 auto;
-            border: 3px ridge #808080;
-            background-color: #000040;
+            border: 3px ridge #6272a4;
+            background-color: #44475a;
             padding: 10px;
         }
+
         table.project-list {
             width: 100%;
             border-collapse: collapse;
         }
+
         table.project-list td {
             padding: 8px;
-            border: 1px solid #00FF00;
+            border: 1px solid #50fa7b;
             vertical-align: top;
         }
+
         table.project-list td.icon-cell {
             width: 80px;
             text-align: center;
         }
+
         .blink {
             animation: blinker 1s linear infinite;
         }
+
         @keyframes blinker {
-            50% { opacity: 0; }
+            50% {
+                opacity: 0;
+            }
         }
+
         .star {
-            color: #FFFF00;
+            color: #f1fa8c;
         }
+
         .section-header {
-            background-color: #004080;
-            color: #FFFFFF;
+            background-color: #282a36;
+            color: #f8f8f2;
             padding: 5px 10px;
             font-size: 18px;
             font-weight: bold;
-            border: 2px outset #808080;
+            border: 2px outset #6272a4;
         }
+
         img {
-            border: 2px solid #00FF00;
+            border: 2px solid #50fa7b;
         }
+
         .counter {
             font-size: 11px;
-            color: #808080;
+            color: #6272a4;
             text-align: center;
             margin-top: 10px;
         }
+
         .nav-bar {
-            background-color: #004080;
-            border: 2px outset #808080;
+            background-color: #282a36;
+            border: 2px outset #6272a4;
             padding: 5px;
             text-align: center;
         }
+
         .nav-bar a {
-            color: #FFFFFF;
+            color: #f8f8f2;
             text-decoration: none;
             margin: 0 10px;
             font-weight: bold;
         }
+
         .nav-bar a:hover {
-            color: #FFFF00;
+            color: #f1fa8c;
             text-decoration: underline;
         }
     </style>
 </head>
+
 <body>
 
-<br>
-<table class="main" cellpadding="10" cellspacing="0">
-    <tr>
-        <td>
-            <!-- HEADER -->
-            <div class="center">
-                <span class="star">&#9733;&#9733;&#9733;</span>
-                <span style="font-size: 28px; color: #FFFFFF; font-weight: bold;">
-                    Welcome to Asil's Homepage!
-                </span>
-                <span class="star">&#9733;&#9733;&#9733;</span>
-                <br><br>
-                <marquee class="marquee-text" scrollamount="4">
-                    *** Welcome! This page is best viewed with your imagination! *** Engineering + Code = Awesome ***
-                </marquee>
-            </div>
-
-            <hr>
-
-            <!-- NAVIGATION -->
-            <div class="nav-bar">
-                <a href="index.html">[ Home ]</a>
-                <a href="projects/asilmech.html">[ ASILMECH ]</a>
-            </div>
-
-            <hr>
-
-            <!-- ABOUT ME -->
-            <div class="section-header">&#128075; About Me</div>
-            <br>
-            <p>
-                Hey! My name is <b style="color: #FFFFFF;">Asil</b>.
-            </p>
-            <p>
-                I'm a <b style="color: #00FFFF;">4th year Mechanical Engineering student</b> and this is my personal website!
-                I love building things &mdash; whether it's physical machines or software applications.
-                On this page you'll find my projects, tools, and apps that I've been working on.
-            </p>
-            <p>
-                I develop mobile apps and engineering tools in my spare time.
-                My goal is to make engineering education more accessible and fun for everyone.
-            </p>
-            <p>
-                Feel free to look around and check out my projects below!
-            </p>
-
-            <hr>
-
-            <!-- PROJECTS LIST -->
-            <div class="section-header">&#128187; My Projects</div>
-            <br>
-            <table class="project-list">
-                <tr>
-                    <td class="icon-cell">
-                        <a href="projects/asilmech.html">
-                            <img src="images/ASILMECH-logo.png" alt="ASILMECH Logo" width="64" height="64">
-                        </a>
-                    </td>
-                    <td>
-                        <span class="blink" style="color: #FF0000;">&#9658; NEW!</span>
-                        <a href="projects/asilmech.html" style="font-size: 18px; font-weight: bold;">ASILMECH</a>
-                        <br>
-                        <span style="color: #CCCCCC;">
-                            A mobile app for quick and effective engineering calculations.
-                            Includes tools like resistor color code solver, beam bending, Mohr's circle, and more!
-                            Built for students, by a student.
-                        </span>
-                        <br><br>
-                        <a href="https://play.google.com/store/apps/details?id=com.furkansariboga.asilmech">&#11015; Download on Google Play</a>
-                        &nbsp;|&nbsp;
-                        <a href="projects/asilmech.html">Read more &gt;&gt;</a>
-                    </td>
-                </tr>
-            </table>
-
-            <hr>
-
-            <!-- FOOTER -->
-            <div class="center">
-                <p style="color: #808080; font-size: 12px;">
-                    &#169; 2026 Asil. All rights reserved.<br>
-                    Last updated: April 2026<br>
-                    <br>
-                    <img src="https://web.archive.org/web/2009/http://www.interspire.com/content/wp-content/uploads/2006/09/best_viewed_with_ie.gif" alt="" width="88" height="31" style="border: 0;" onerror="this.style.display='none'">
-                </p>
-                <div class="counter">
-                    You are visitor #: <span style="color: #00FF00; font-family: 'Courier New';">000427</span>
+    <br>
+    <table class="main" cellpadding="10" cellspacing="0">
+        <tr>
+            <td>
+                <!-- HEADER -->
+                <div class="center">
+                    <span class="star">&#9733;&#9733;&#9733;</span>
+                    <span style="font-size: 28px; color: #f8f8f2; font-weight: bold;">
+                        Welcome to Asil's Homepage!
+                    </span>
+                    <span class="star">&#9733;&#9733;&#9733;</span>
+                    <br><br>
+                    <marquee class="marquee-text" scrollamount="4">
+                        *** Welcome! This page is best viewed with your imagination! *** Engineering + Code = Awesome
+                        ***
+                    </marquee>
                 </div>
-            </div>
-        </td>
-    </tr>
-</table>
-<br>
+
+                <hr>
+
+                <!-- NAVIGATION -->
+                <div class="nav-bar">
+                    <a href="index.html">[ Home ]</a>
+                    <a href="projects/asilmech.html">[ ASILMECH ]</a>
+                </div>
+
+                <hr>
+
+                <!-- ABOUT ME -->
+                <div class="section-header">&#128075; About Me</div>
+                <br>
+                <p>
+                    Hey! My name is <b style="color: #f8f8f2;">Asil</b>.
+                </p>
+                <p>
+                    I'm a <b style="color: #8be9fd;">4th year Mechanical Engineering student</b> and this is my personal
+                    website!
+                    I love building things &mdash; whether it's physical machines or software applications.
+                    On this page you'll find my projects, tools, and apps that I've been working on.
+                </p>
+                <p>
+                    I develop mobile apps and engineering tools in my spare time.
+                    My goal is to make engineering education more accessible and fun for everyone.
+                </p>
+                <p>
+                    Feel free to look around and check out my projects below!
+                </p>
+
+                <hr>
+
+                <!-- PROJECTS LIST -->
+                <div class="section-header">&#128187; My Projects</div>
+                <br>
+                <table class="project-list">
+                    <tr>
+                        <td class="icon-cell">
+                            <a href="projects/asilmech.html">
+                                <img src="images/ASILMECH-logo.png" alt="ASILMECH Logo" width="64" height="64">
+                            </a>
+                        </td>
+                        <td>
+                            <span class="blink" style="color: #ff5555;">&#9658; NEW!</span>
+                            <a href="projects/asilmech.html" style="font-size: 18px; font-weight: bold;">ASILMECH</a>
+                            <br>
+                            <span style="color: #f8f8f2;">
+                                A mobile app for quick and effective engineering calculations.
+                                Includes tools like resistor color code solver, beam bending, Mohr's circle, and more!
+                                Built for students, by a student.
+                            </span>
+                            <br><br>
+                            <a href="https://play.google.com/store/apps/details?id=com.furkansariboga.asilmech">&#11015;
+                                Download on Google Play</a>
+                            &nbsp;|&nbsp;
+                            <a href="projects/asilmech.html">Read more &gt;&gt;</a>
+                        </td>
+                    </tr>
+                </table>
+
+                <hr>
+
+                <!-- FOOTER -->
+                <div class="center">
+                    <p style="color: #6272a4; font-size: 12px;">
+                        &#169; 2026 Asil. All rights reserved.<br>
+                        Last updated: April 2026<br>
+                        <br>
+                        <img src="https://web.archive.org/web/2009/http://www.interspire.com/content/wp-content/uploads/2006/09/best_viewed_with_ie.gif"
+                            alt="" width="88" height="31" style="border: 0;" onerror="this.style.display='none'">
+                    </p>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <br>
 
 </body>
+
 </html>
