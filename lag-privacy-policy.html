@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — LAG: Late Arrival Guaranteed</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F6F7FA;
+    --panel: #FFFFFF;
+    --ink: #1B1F2B;
+    --ink-soft: #4A5064;
+    --rule: #DCE0EA;
+    --signal: #E0672E;
+    --relay: #1F7A73;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  h1, h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+  }
+
+  a { color: var(--relay); }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--signal); outline-offset: 3px; }
+
+  /* -- top strip -- */
+  .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 24px;
+    background: rgba(246, 247, 250, 0.92);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid var(--rule);
+  }
+  .topbar .mark {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .topbar .mark span { color: var(--signal); }
+  .lang-jump { display: flex; gap: 6px; }
+  .lang-jump a {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--ink-soft);
+    padding: 6px 12px;
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+  }
+  .lang-jump a:hover { color: var(--ink); border-color: var(--ink-soft); }
+
+  main { max-width: 680px; margin: 0 auto; padding: 0 24px 96px; }
+
+  .hero {
+    padding: 56px 0 32px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .hero .game-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--signal);
+    margin: 0 0 10px;
+  }
+  .hero h1 {
+    font-size: 34px;
+    font-weight: 700;
+    margin: 0 0 12px;
+    line-height: 1.15;
+  }
+  .hero .meta {
+    color: var(--ink-soft);
+    font-size: 14px;
+    margin: 0;
+  }
+
+  section.locale { padding: 40px 0 8px; }
+  section.locale + section.locale { border-top: 2px solid var(--rule); padding-top: 56px; }
+
+  .locale-tag {
+    display: inline-block;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--relay);
+    background: rgba(31, 122, 115, 0.09);
+    padding: 4px 10px;
+    border-radius: 5px;
+    margin-bottom: 18px;
+  }
+
+  article h2 {
+    font-size: 19px;
+    font-weight: 600;
+    margin: 40px 0 12px;
+  }
+  article h2:first-of-type { margin-top: 8px; }
+
+  article p { margin: 0 0 14px; color: var(--ink); }
+  article p.lead { color: var(--ink-soft); font-size: 16px; }
+
+  .contact-card {
+    margin-top: 20px;
+    padding: 18px 20px;
+    background: var(--panel);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+  }
+  .contact-card .who {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  .contact-card .mail { font-size: 15px; }
+
+  footer {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 32px 24px 64px;
+    color: var(--ink-soft);
+    font-size: 13px;
+  }
+
+  @media (max-width: 480px) {
+    .hero h1 { font-size: 27px; }
+    .hero { padding-top: 40px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a class="mark" href="#top">LAG <span>—</span> Late Arrival Guaranteed</a>
+  <nav class="lang-jump">
+    <a href="#en">EN</a>
+    <a href="#tr">TR</a>
+  </nav>
+</div>
+
+<main id="top">
+  <div class="hero">
+    <p class="game-name">Privacy Policy</p>
+    <h1>What happens to your data when you play LAG</h1>
+    <p class="meta">Effective date: September 4, 2026 · Available in English and Türkçe below</p>
+  </div>
+
+  <!-- ================= ENGLISH ================= -->
+  <section class="locale" id="en">
+    <span class="locale-tag">English</span>
+    <article>
+      <p class="lead">LAG is a mobile multiplayer racing game published on Google Play. This page explains what happens to information when you play it — and there isn't much to explain, because we built LAG to collect as little as possible.</p>
+
+      <h2>1. Who is responsible</h2>
+      <p>LAG is developed by Furkan Sarıboğa. Since the game is distributed globally, this policy is written to meet both the EU General Data Protection Regulation (GDPR) and Türkiye's Personal Data Protection Law No. 6698 (KVKK), alongside Google Play's developer requirements.</p>
+
+      <h2>2. We do not collect personal data</h2>
+      <p>LAG doesn't ask you to create an account. There's no sign-up, no email address, no phone number, and no social login — nothing that identifies you personally. The only thing you provide is a username you choose for yourself, and it stays on your device; we never link it to a real-world identity.</p>
+
+      <h2>3. What the multiplayer server sees</h2>
+      <p>For five players to race against each other in real time, LAG needs a host server to relay the one-second command queues each pilot transmits during a match, so every device simulates the same race. This gameplay data — command sequences, race timing, match results — passes through our server infrastructure (built on Google Firebase) purely to keep matches in sync. It is not linked to your identity, is never used for advertising or profiling, and is not sold or shared with third parties. It is automatically deleted every day.</p>
+
+      <h2>4. No advertising, no trackers — for now</h2>
+      <p>LAG currently contains no advertising SDKs, analytics trackers, or third-party marketing tools. If that ever changes, we'll update this policy first, and this page will show a new effective date.</p>
+
+      <h2>5. Children</h2>
+      <p>LAG isn't designed for or specifically directed at children, but it also doesn't ask for anything that would let us verify age. Because no personal data is collected from any player, regardless of age, there's no personal information about children for us to hold or misuse. If something about this concerns you, contact us using the details below.</p>
+
+      <h2>6. Data retention & security</h2>
+      <p>The only data our servers touch is the temporary gameplay data described in Section 3, and it's cleared out on a daily automatic cycle. We keep no long-term logs of who played what, and there's no personal data store to retain in the first place. Our Firebase project is configured with security rules that restrict who can read or write match data.</p>
+
+      <h2>7. Your rights (GDPR / KVKK)</h2>
+      <p>Both the GDPR and KVKK give you rights over personal data — access, correction, deletion, objection, and so on. Because LAG doesn't collect personal data about you, most of these rights won't have anything to act on in practice. If you still have questions, or believe we're holding information about you, email us and we'll look into it and respond within a reasonable time.</p>
+
+      <h2>8. Changes to this policy</h2>
+      <p>We may update this policy as LAG changes — for example, if we ever add advertising, analytics, or accounts. Any update will be posted on this page with a new effective date. Continuing to play LAG after an update means you accept the revised policy.</p>
+
+      <h2>9. Contact</h2>
+      <div class="contact-card">
+        <div class="who">Furkan Sarıboğa</div>
+        <div class="mail"><a href="mailto:furkansaribogaci@gmail.com">furkansaribogaci@gmail.com</a></div>
+      </div>
+    </article>
+  </section>
+
+  <!-- ================= TÜRKÇE ================= -->
+  <section class="locale" id="tr">
+    <span class="locale-tag">Türkçe</span>
+    <article>
+      <p class="lead">LAG, Google Play üzerinden yayınlanan mobil, çok oyunculu bir yarış oyunudur. Bu sayfa, oyunu oynarken bilgilerinize ne olduğunu açıklar — ve açıklayacak fazla bir şey yok, çünkü LAG'ı mümkün olduğunca az veri toplayacak şekilde tasarladık.</p>
+
+      <h2>1. Sorumlu kişi</h2>
+      <p>LAG, Furkan Sarıboğa tarafından geliştirilmektedir. Oyun global olarak dağıtıldığından, bu politika hem AB Genel Veri Koruma Tüzüğü'ne (GDPR) hem de Türkiye'nin 6698 sayılı Kişisel Verilerin Korunması Kanunu'na (KVKK) hem de Google Play'in geliştirici gereksinimlerine uygun olacak şekilde hazırlanmıştır.</p>
+
+      <h2>2. Kişisel veri toplamıyoruz</h2>
+      <p>LAG, hesap oluşturmanızı istemez. Kayıt işlemi, e-posta adresi, telefon numarası ya da sosyal medya girişi yoktur — sizi kişisel olarak tanımlayabilecek hiçbir şey bulunmaz. Sağladığınız tek bilgi, kendiniz için seçtiğiniz bir kullanıcı adıdır ve bu ad cihazınızda kalır; gerçek kimliğinizle hiçbir zaman ilişkilendirilmez.</p>
+
+      <h2>3. Çok oyunculu sunucu ne görür</h2>
+      <p>Beş oyuncunun gerçek zamanlı olarak yarışabilmesi için LAG'ın, her pilotun bir maç sırasında gönderdiği bir saniyelik komut kuyruklarını tüm cihazlara aktaracak bir host sunucuya ihtiyacı vardır; böylece her cihaz aynı yarışı simüle eder. Bu oyun verisi — komut dizileri, yarış zamanlaması, maç sonuçları — yalnızca maçları senkronize tutmak amacıyla sunucu altyapımızdan (Google Firebase üzerine kurulu) geçer. Kimliğinizle ilişkilendirilmez, reklam veya profilleme amacıyla asla kullanılmaz, üçüncü taraflarla paylaşılmaz ya da satılmaz. Her gün otomatik olarak silinir.</p>
+
+      <h2>4. Reklam yok, takip yok — şimdilik</h2>
+      <p>LAG şu anda herhangi bir reklam SDK'sı, analiz aracı veya üçüncü taraf pazarlama yazılımı içermemektedir. Bu durum bir gün değişirse, önce bu politikayı güncelleyeceğiz ve bu sayfada yeni bir yürürlük tarihi görünecektir.</p>
+
+      <h2>5. Çocuklar</h2>
+      <p>LAG, çocuklara özel olarak yönelik tasarlanmamıştır; ancak yaşınızı doğrulamamızı sağlayacak herhangi bir bilgi de istemez. Hiçbir oyuncudan, yaşı ne olursa olsun kişisel veri toplanmadığından, elimizde çocuklara ait yanlış kullanılabilecek herhangi bir kişisel bilgi bulunmamaktadır. Bu konuda bir endişeniz varsa, aşağıdaki bilgilerden bize ulaşabilirsiniz.</p>
+
+      <h2>6. Veri saklama ve güvenlik</h2>
+      <p>Sunucularımızın temas ettiği tek veri, 3. bölümde açıklanan geçici oyun verisidir ve bu veri günlük otomatik bir döngüyle temizlenir. Kimin ne oynadığına dair uzun vadeli kayıt tutmuyoruz; zaten saklanacak bir kişisel veri deposu bulunmamaktadır. Firebase projemiz, maç verilerini kimin okuyup yazabileceğini sınırlayan güvenlik kurallarıyla yapılandırılmıştır.</p>
+
+      <h2>7. Haklarınız (GDPR / KVKK)</h2>
+      <p>Hem GDPR hem de KVKK size kişisel verileriniz üzerinde erişim, düzeltme, silme, itiraz gibi haklar tanır. LAG sizinle ilgili kişisel veri toplamadığından, bu hakların pratikte uygulanacağı bir veri genellikle bulunmaz. Yine de sorularınız varsa veya hakkınızda bir bilgi tuttuğumuzu düşünüyorsanız, bize e-posta gönderin; makul bir süre içinde inceleyip yanıt veririz.</p>
+
+      <h2>8. Bu politikadaki değişiklikler</h2>
+      <p>LAG değiştikçe bu politikayı güncelleyebiliriz — örneğin ileride reklam, analiz aracı veya hesap sistemi eklersek. Her güncelleme bu sayfada yeni bir yürürlük tarihiyle yayınlanacaktır. Bir güncellemeden sonra LAG'ı oynamaya devam etmeniz, güncellenmiş politikayı kabul ettiğiniz anlamına gelir.</p>
+
+      <h2>9. İletişim</h2>
+      <div class="contact-card">
+        <div class="who">Furkan Sarıboğa</div>
+        <div class="mail"><a href="mailto:furkansaribogaci@gmail.com">furkansaribogaci@gmail.com</a></div>
+      </div>
+    </article>
+  </section>
+</main>
+
+<footer>
+  © 2026 Furkan Sarıboğa — LAG: Late Arrival Guaranteed
+</footer>
+
+</body>
+</html>
