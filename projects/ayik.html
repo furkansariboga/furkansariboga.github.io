@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="AYIK - A free, open-source, and 100% private on-device habit and sobriety tracker for Android. Track time since last occurrence and calculate money/time savings.">
+    <title>AYIK - Habit &amp; Sobriety Tracker App</title>
+    <style>
+        body {
+            background-color: #282a36;
+            color: #50fa7b;
+            font-family: "Courier New", Courier, monospace;
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            color: #bd93f9;
+        }
+
+        a:visited {
+            color: #ffb86c;
+        }
+
+        a:hover {
+            color: #ff79c6;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px dashed #50fa7b;
+            margin: 15px 0;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        table.main {
+            width: 700px;
+            margin: 0 auto;
+            border: 3px ridge #6272a4;
+            background-color: #44475a;
+            padding: 10px;
+        }
+
+        .section-header {
+            background-color: #282a36;
+            color: #f8f8f2;
+            padding: 5px 10px;
+            font-size: 18px;
+            font-weight: bold;
+            border: 2px outset #6272a4;
+        }
+
+        img {
+            border: 2px solid #50fa7b;
+        }
+
+        .nav-bar {
+            background-color: #282a36;
+            border: 2px outset #6272a4;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .nav-bar a {
+            color: #f8f8f2;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        .nav-bar a:hover {
+            color: #f1fa8c;
+            text-decoration: underline;
+        }
+
+        .feature-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        .feature-table td {
+            padding: 4px 8px;
+            border: 1px solid #282a36;
+            color: #f8f8f2;
+        }
+
+        .feature-table td:first-child {
+            color: #50fa7b;
+            font-weight: bold;
+            width: 30px;
+            text-align: center;
+        }
+
+        .download-box {
+            background-color: #282a36;
+            border: 3px outset #50fa7b;
+            padding: 15px;
+            text-align: center;
+            margin: 15px 0;
+        }
+
+        .download-box a {
+            font-size: 18px;
+            color: #50fa7b;
+            font-weight: bold;
+        }
+
+        .screenshot-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+
+        .screenshot-cell {
+            text-align: center;
+            padding: 10px;
+            vertical-align: top;
+        }
+
+        .screenshot-cell img {
+            border-radius: 6px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .caption {
+            color: #8be9fd;
+            font-size: 12px;
+            margin-top: 6px;
+            display: block;
+        }
+
+        .blink {
+            animation: blinker 1s linear infinite;
+        }
+
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        .star {
+            color: #f1fa8c;
+        }
+
+        .badge-box {
+            background-color: #282a36;
+            border: 1px solid #6272a4;
+            padding: 8px 12px;
+            margin: 10px 0;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <br>
+    <table class="main" cellpadding="10" cellspacing="0">
+        <tr>
+            <td>
+                <!-- HEADER -->
+                <div class="center">
+                    <img src="../images/AYIK-logo.png" alt="AYIK Logo" width="128" height="128">
+                    <br><br>
+                    <span style="font-size: 28px; color: #f8f8f2; font-weight: bold;">
+                        AYIK
+                    </span>
+                    <br>
+                    <span style="font-size: 14px; color: #8be9fd;">
+                        Habit &amp; Sobriety Tracker &bull; 100% Private &amp; Open Source
+                    </span>
+                    <br>
+                    <marquee style="color: #ff79c6; font-size: 12px; font-weight: bold;" scrollamount="3">
+                        *** Break habits, build freedom! *** 100% On-Device &amp; Private *** No Ads, No Cloud, Free Forever ***
+                    </marquee>
+                </div>
+
+                <hr>
+
+                <!-- NAVIGATION -->
+                <div class="nav-bar">
+                    <a href="../index.html">[ Home ]</a>
+                    <a href="asilmech.html">[ ASILMECH ]</a>
+                    <a href="ayik.html">[ AYIK ]</a>
+                </div>
+
+                <hr>
+
+                <!-- WHAT IS AYIK -->
+                <div class="section-header">&#129504; What is AYIK?</div>
+                <br>
+                <p>
+                    <b style="color: #f8f8f2;">AYIK</b> is a private, on-device mobile app designed to help you regain control
+                    by tracking the exact time passed since a habit's last occurrence.
+                </p>
+                
+
+                <div class="badge-box">
+                    <span style="color: #ff79c6; font-weight: bold;">&ldquo;Bad habit recovery should not be monetized.&rdquo;</span>
+                    <br>
+                    <span style="color: #6272a4; font-size: 12px;">
+                        &mdash; Core project philosophy (Inspired by the open-source project <i>Sobriety</i>).
+                    </span>
+                </div>
+
+                <p>
+                    Unlike modern tracking apps bloated with subscriptions, cloud telemetry, paywalls, and advertisements,
+                    AYIK was built on the core belief that your recovery journey is strictly personal and should never be profited off.
+                </p>
+
+                <hr>
+
+                <!-- PRIVACY & PHILOSOPHY -->
+                <div class="section-header">&#128274; 100% Private &amp; On-Device</div>
+                <br>
+                <p style="color: #f8f8f2;">
+                    Your personal habits and struggles are nobody else's business:
+                </p>
+                <table class="feature-table">
+                    <tr>
+                        <td>&#10004;</td>
+                        <td><b>No Cloud Sync / No Servers:</b> All your habit data, timestamps, and notes live strictly inside your phone's local Room Database.</td>
+                    </tr>
+                    <tr>
+                        <td>&#10004;</td>
+                        <td><b>Zero Analytics &amp; Zero Trackers:</b> No Google Analytics, no Facebook SDKs, no behavioral telemetry.</td>
+                    </tr>
+                    <tr>
+                        <td>&#10004;</td>
+                        <td><b>100% Offline:</b> Works without an internet connection. No sign-up, no login, and no email needed.</td>
+                    </tr>
+                    <tr>
+                        <td>&#10004;</td>
+                        <td><b>App Lock &amp; Export:</b> Lock your sensitive trackers and export your data at any time.</td>
+                    </tr>
+                </table>
+                <p style="font-size: 13px;">
+                    Read our full <a href="../AYIK-privacy-policy.html">AYIK Privacy Policy</a> for more details.
+                </p>
+
+                <hr>
+
+                <!-- FEATURES -->
+                <div class="section-header">&#9889; Features</div>
+                <br>
+                <p style="color: #f8f8f2;">Everything you need to stay on track:</p>
+
+                <p style="color: #8be9fd;"><b>&#9654; Real-Time Milestones &amp; Streaks</b></p>
+                <table class="feature-table">
+                    <tr>
+                        <td>&#10004;</td>
+                        <td>Live ticking counter measuring days, hours, minutes, and seconds since your last occurrence.</td>
+                    </tr>
+                    <tr>
+                        <td>&#10004;</td>
+                        <td>Track multiple habits simultaneously with custom titles and starting points.</td>
+                    </tr>
+                    <tr>
+                        <td>&#10004;</td>
+                        <td>Relapse logging with timestamps to maintain an honest and reflective record.</td>
+                    </tr>
+                    <tr>
+                        <td>&#10004;</td>
+                        <td>&ldquo;Mark Day&rdquo; feature to reinforce everyday wins.</td>
+                    </tr>
+                </table>
+
+                <p style="color: #8be9fd;"><b>&#9654; Financial &amp; Time Savings Calculator</b></p>
+                <table class="feature-table">
+                    <tr>
+                        <td>&#10004;</td>
+                        <td><b>Money Saved:</b> Set your estimated daily cost and watch your cumulative savings grow in real time.</td>
+                    </tr>
+                    <tr>
+                        <td>&#10004;</td>
+                        <td><b>Time Reclaimed:</b> Enter daily minutes lost to the habit and quantify how many hours and days you've won back.</td>
+                    </tr>
+                </table>
+
+                <p style="color: #8be9fd;"><b>&#9654; Statistics &amp; Clean UI</b></p>
+                <table class="feature-table">
+                    <tr>
+                        <td>&#10004;</td>
+                        <td>Simple, modern, and uncluttered Material design interface.</td>
+                    </tr>
+                    <tr>
+                        <td>&#10004;</td>
+                        <td>Dedicated statistics views to analyze patterns and long-term improvements.</td>
+                    </tr>
+                    <tr>
+                        <td>&#10004;</td>
+                        <td>Free, open source, and lightweight.</td>
+                    </tr>
+                </table>
+
+                <hr>
+
+                <!-- SCREENSHOTS -->
+                <div class="section-header">&#128247; Screenshots</div>
+                <br>
+                <table class="screenshot-table">
+                    <tr>
+                        <td class="screenshot-cell" style="width: 50%;">
+                            <img src="../images/AYIK-screenshot-tracker.png" alt="AYIK Live Tracker &amp; Savings" width="220">
+                            <span class="caption">Live Streak Counter &amp; Total Savings</span>
+                        </td>
+                        <td class="screenshot-cell" style="width: 50%;">
+                            <img src="../images/AYIK-screenshot-add-entry.png" alt="Add a new habit entry" width="220">
+                            <span class="caption">Add New Tracker (Cost &amp; Time)</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="screenshot-cell" style="width: 50%;">
+                            <img src="../images/AYIK-screenshot-welcome.png" alt="Welcome to AYIK" width="220">
+                            <span class="caption">Welcome Screen &amp; Concept</span>
+                        </td>
+                        <td class="screenshot-cell" style="width: 50%;">
+                            <img src="../images/AYIK-screenshot-privacy.png" alt="Your data stays on your device" width="220">
+                            <span class="caption">100% On-Device Data Privacy</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="screenshot-cell" colspan="2">
+                            <img src="../images/AYIK-screenshot-disclaimer.png" alt="Important: not medical advice" width="220">
+                            <span class="caption">Transparent Health &amp; Safety Disclaimer</span>
+                        </td>
+                    </tr>
+                </table>
+
+                <hr>
+
+                <!-- DOWNLOAD & REPO -->
+                <div class="section-header">&#11015; Download &amp; Source Code</div>
+                <br>
+                <div class="download-box">
+                    <span class="blink" style="color: #f1fa8c; font-size: 14px;">&#9733; 100% FREE &bull; OPEN SOURCE &bull; NO ADS &#9733;</span>
+                    <br><br>
+                    <a href="https://play.google.com/store/apps/details?id=io.github.furkansariboga.ayik&amp;pcampaignid=web_share">
+                        &#9658; GET AYIK ON GOOGLE PLAY &#9668;
+                    </a>
+                    <br><br>
+                    <a href="https://github.com/furkansariboga/AYIK" style="font-size: 16px; color: #8be9fd;">
+                        &#9658; VIEW SOURCE CODE ON GITHUB &#9668;
+                    </a>
+                    <br><br>
+                    <span style="color: #6272a4; font-size: 12px;">Package: io.github.furkansariboga.ayik &bull; Native Kotlin for Android</span>
+                </div>
+
+                <hr>
+
+                <!-- MEDICAL DISCLAIMER -->
+                <div class="section-header">&#9888; Medical Disclaimer</div>
+                <br>
+                <div class="badge-box">
+                    <p style="color: #ff5555; font-weight: bold; margin-top: 0;">
+                        Important: Not Medical Advice
+                    </p>
+                    <p style="color: #f8f8f2; font-size: 12px; margin-bottom: 0;">
+                        AYIK is a self-tracking tool and does not provide medical advice, diagnosis, or treatment.
+                        Always seek the advice of a physician or other qualified health provider with any questions you may have
+                        regarding a medical condition or addiction. Never disregard professional medical advice or delay in seeking it
+                        because of something you have read or tracked in this application.
+                    </p>
+                </div>
+
+                <hr>
+
+                <!-- FOOTER -->
+                <div class="center">
+                    <a href="../index.html">&lt;&lt; Back to Home</a>
+                    <br><br>
+                    <p style="color: #6272a4; font-size: 12px;">
+                        &#169; 2026 Asil. All rights reserved.<br>
+                        Last updated: October 2026
+                    </p>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <br>
+
+</body>
+
+</html>
